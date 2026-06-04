@@ -48,7 +48,11 @@ body {
   50% { background-position: 8% 4%, 92% 26%, 50% 56%; }
 }
 
-main { flex: 1; }
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 a { color: var(--accent); text-decoration: none; transition: opacity var(--transition); }
 a:hover { opacity: 0.86; }
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 32px; }
@@ -190,8 +194,13 @@ nav {
 
 /* Hero */
 .hero {
-  padding: 96px 0 80px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 0;
 }
 
 .hero h1 {
